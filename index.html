@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Leap Year Program</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Leap Year Program</h1>
+        <div class="center">
+        <p>Enter a year to find out if it is a leap year:</p>
+        <input type="text" id="year" placeholder="Enter year here...">
+        <br><br>
+        <button onclick="checkLeapYear()">Check Leap Year</button>
+        <br><br>
+        <p id="result"></p>
+    </div>
+    </div>
+    <script type="text/javascript">
+        function checkLeapYear() {
+            var year = document.getElementById("year").value;
+            if (year % 4 == 0) {
+                document.getElementById("result").innerHTML = year + " is a leap year. Happy Birthday Leapers";
+            } else {
+                document.getElementById("result").innerHTML = year + " is not a leap year. Sorry Leapers";
+            }
+        }
+    </script>
+</body>
+
+</html>
